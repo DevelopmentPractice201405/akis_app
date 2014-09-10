@@ -3,4 +3,7 @@ si
 ima
 ku
 ar
-#test
+####クバ
+#TMUXの導入
+ターミナルの共有ができるtmuxを導入してみました。
+-tmuxとは
