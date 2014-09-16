@@ -42,7 +42,7 @@ end
 ```
 
 つぎに**routes.rb**に新たに**resources**追加します。
-
+ファイル場所　　/config /routes.rb
 ```routes.rb
 AkisApp::Application.routes.draw do
   .
