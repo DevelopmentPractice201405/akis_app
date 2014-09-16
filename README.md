@@ -10,8 +10,8 @@ http://railscasts.com/episodes/364-active-record-reputation-system?language=ja&v
 
 ##まずはインストール  
 初めにGemファイルに下記を追加します
+
 ```Gemfile
- 	
 gem 'activerecord-reputation-system', github: 'NARKOZ/activerecord-reputation-system', branch: 'rails4'
 ```
 
