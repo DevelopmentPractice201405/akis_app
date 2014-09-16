@@ -49,7 +49,7 @@ AkisApp::Application.routes.draw do
   .
   .
   resources :microposts, only: [:create, :destroy]
-  resources :microposts do
+  resources :microposts do  #新しく追加するresources
     member do
       post :vote
     end
