@@ -74,7 +74,7 @@ class MicropostsController < ApplicationController
     value = params[:type] == "up" ? 1 : -1
     @micropost = Micropost.find(params[:id])
     @micropost.add_or_update_evaluation(:votes, value, current_user)
-    redirect_to :back, notice: "Thank you for いいね!"
+    redirect_to :back, notice: "Thank you for ええやん!"
   end
   
   private
@@ -83,3 +83,23 @@ class MicropostsController < ApplicationController
   .
 end
 ```
+
+##投票用のリンクを貼り付ける
+
+ここでようやく**いいね！**がおせるボタン（リンク）を**_micropost.html.erb**に導入します。  
+ファイル場所   /app/views/microposts/_micropost.html.erb 
+```/app/views/microposts/_micropost.html.erb 
+<li>
+  <span class="content">
+  	<%= micropost.content %>
+
+  	<%= pluralize micropost.reputation_for(:votes).to_i, "vote"%>
+  	| <%= link_to "ええやん", vote_micropost_path(micropost, type: "up"), method: "post" %>
+  	| <%= link_to " なんでやねん", vote_micropost_path(micropost, type: "down"), method: "post" %>
+  </span>
+  .
+  .
+  .
+</li>
+```
+
