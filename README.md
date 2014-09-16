@@ -86,7 +86,7 @@ end
 
 ##投票用のリンクを貼り付ける
 
-ここでようやく**いいね！**がおせるボタン（リンク）を**_micropost.html.erb**に導入します。  
+ここでようやく**いいね！**が押せるボタン（リンク）を**_micropost.html.erb**に導入します。  
 ファイル場所   /app/views/microposts/_micropost.html.erb 
 ```/app/views/microposts/_micropost.html.erb 
 <li>
