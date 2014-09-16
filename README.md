@@ -41,9 +41,9 @@ class Micropost < ActiveRecord::Base
 end
 ```
 
-つぎに**routes.rb**に新たに**resources**追加します。
-ファイル場所　　/config /routes.rb
-```routes.rb
+つぎに**routes.rb**に新たに**resources**追加します。  
+ファイル場所　　/config/routes.rb
+```/config/routes.rb
 AkisApp::Application.routes.draw do
   .
   .
@@ -62,4 +62,24 @@ end
 
 ###「いいね」ボタンのアクションを作成
 
-
+**microposts_controller.rb**に「いいね」用のアクションを作りましょう。  
+上記で**post :vote**としているため**def vote**として作ります。  
+ファイル場所　　/app/controllers/microposts_controller.rb
+```/app/controllers/microposts_controller.rb
+class MicropostsController < ApplicationController
+  .
+  .
+  .
+  def vote
+    value = params[:type] == "up" ? 1 : -1
+    @micropost = Micropost.find(params[:id])
+    @micropost.add_or_update_evaluation(:votes, value, current_user)
+    redirect_to :back, notice: "Thank you for ええやん!"
+  end
+  
+  private
+  .
+  .
+  .
+end
+```
