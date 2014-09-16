@@ -74,7 +74,7 @@ class MicropostsController < ApplicationController
     value = params[:type] == "up" ? 1 : -1
     @micropost = Micropost.find(params[:id])
     @micropost.add_or_update_evaluation(:votes, value, current_user)
-    redirect_to :back, notice: "Thank you for ええやん!"
+    redirect_to :back, notice: "Thank you for いいね!"
   end
   
   private
