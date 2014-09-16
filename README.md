@@ -31,7 +31,7 @@ $ bundle exec rake db:migrate
 ####「いいね」を導入したい対象のモデルに**has_reputation**を追加しましょう。
 
 と言うことで今回はチュートリアルに沿って作成される、**micropost.rb**に追加したいと思います。  
-ファイル場所  /app/models/micropost.rb
+ファイル場所　　/app/models/micropost.rb
 ```micropost.rb
 class Micropost < ActiveRecord::Base  
   has_reputation :votes, source: :user, aggregated_by: :sum  
