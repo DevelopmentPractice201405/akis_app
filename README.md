@@ -34,7 +34,7 @@ $ bundle exec rake db:migrate
 ファイル場所　　/app/models/micropost.rb
 ```micropost.rb
 class Micropost < ActiveRecord::Base  
-  has_reputation :votes, source: :user, aggregated_by: :sum  
+  has_reputation :votes, source: :user, aggregated_by: :sum #追加 
   .  
   .  
   . 
@@ -53,7 +53,7 @@ AkisApp::Application.routes.draw do
     member do
       post :vote
     end
-  end
+  end   #ここまで
   .
   .
   .
@@ -93,9 +93,9 @@ end
   <span class="content">
   	<%= micropost.content %>
 
-  	<%= pluralize micropost.reputation_for(:votes).to_i, "vote"%>
-  	| <%= link_to "ええやん", vote_micropost_path(micropost, type: "up"), method: "post" %>
-  	| <%= link_to " なんでやねん", vote_micropost_path(micropost, type: "down"), method: "post" %>
+  	<%= pluralize micropost.reputation_for(:votes).to_i, "vote"%>   #追加
+  	| <%= link_to "ええやん", vote_micropost_path(micropost, type: "up"), method: "post" %>   #追加
+  	| <%= link_to " なんでやねん", vote_micropost_path(micropost, type: "down"), method: "post" %>    #追加
   </span>
   .
   .
