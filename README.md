@@ -1,5 +1,1 @@
-gurup 
-si
-ima
-ku
-ar
+gurup si ima ku ar<br>
