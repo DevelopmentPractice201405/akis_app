@@ -3,7 +3,7 @@
 
 #「いいねボタン実装してみた」
 
-参考にしたサイトはコチラ↴→  
+参考にしたサイトはコチラ↴  
 http://easyramble.com/activerecord-reputation-system.html  
 http://railscasts.com/episodes/364-active-record-reputation-system?language=ja&view=asciicast
 
@@ -28,6 +28,8 @@ $ bundle exec rake db:migrate
 その時は諦めましょう。（自分のパソコンで失敗したため...乙。）
 
 続いて、マイグレーションまでちゃんと成功したら  
-「いいね」を導入したい対象のモデルに**has_reputation**を追加しましょう。
+####「いいね」を導入したい対象のモデルに**has_reputation**を追加しましょう。
+
+
 
 
