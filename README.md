@@ -60,4 +60,4 @@ AkisApp::Application.routes.draw do
 end
 ```
 
-k
+###「いいね」ボタンのアクションを作成
