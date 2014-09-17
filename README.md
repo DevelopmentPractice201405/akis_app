@@ -1,4 +1,44 @@
 グループ構成　イマズ　クバ　リョウジ　ヨシノ
+
+###---------担当　クバ---------
+
+#TMUX導入
+
+参考にしたサイト
+
+http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html
+
+http://monopocket.jp/blog/programming/1845/
+
+##TMUXとは
+tmux とは GNU Screenと同じ仮想端末管理ソフトウェアである。tmux はターミナル上における作業の使いやすさを大幅に向上させるものです。
+
+メリットとして
+* 複数の端末を軌道でき、タブのように切り替えができる
+* 端末の画面分割ができる
+* 端末を複数のユーザーで共有できる
+
+
+##導入手順
+
+
+tmuxをインストールしていきます。
+
+`$ sudo apt-get install tmux`
+
+ここで404エラーが出た場合は/etc/apt/source.listファイルを編集する必要があります。
+http://repogen.simplylinux.ch/　
+で住んでる国とUbuntuのバージョンを入れて必要なものにチェックを入れると自動的にsources.listを生成できます。
+ここで生成したコードの一番上を/etc/apt/source.listファイルにコピーし
+
+`$ sudo apt-get update`
+
+を実行しエラーがでなければ先ほどのコマンドを実行します。
+
+
+
+
+
 ###---------担当　今頭---------
 
 #「いいねボタン実装してみた」
@@ -111,3 +151,7 @@ end
 ###https://akis-app.herokuapp.com
 <hr>
 <hr>
+
+
+
+
