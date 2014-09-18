@@ -21,8 +21,7 @@ tmux とは GNU Screenと同じ仮想端末管理ソフトウェアである。t
 
 ##導入手順
 
-
-tmuxをインストールしていきます。
+tmuxをインストールします。
 
 `$ sudo apt-get install tmux`
 
@@ -33,7 +32,29 @@ http://repogen.simplylinux.ch/　
 
 `$ sudo apt-get update`
 
-を実行しエラーがでなければ先ほどのコマンドを実行します。
+を実行しエラーがでなければ先ほどのコマンドを実行し完了となります。
+
+使い方はこちらから
+
+http://room6933.com/mymemo/tmux/tmux-basic.html
+<br />
+
+
+なお端末を複数のユーザーで共有する場合はopenssh-serverが必要となります。
+
+
+#実装できなかった機能
+
+##パスワードリマインダ
+
+参考にしたサイト
+
+http://qiita.com/ytr_i/items/0907ee3312ed9d79c9e8
+
+###実装したかった機能
+* Sign up済みアカウントのパスワードをリセット
+* Gmailで再登録用のURLを送信
+
 
 
 
